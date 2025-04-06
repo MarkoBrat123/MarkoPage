@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarelliGaming</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/About.html">About Me</a></li>
+            <li><a href="../pages/Portfolio.html">Portfolio</a></li>
+            <li><a href="../pages/Contact.HTML">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="project">
+        <h2>Project 1: Gambling Site</h2>
+        <p>666</p>
+        <button class="view-more-btn" data-target="details1">View More</button>
+        <div id="details1" class="project-details" style="display: none;">
+            <p>This was my GamblingSite, which i made for people to register and lose money.</p>
+            <img src="../images/premiumkars.PNG" alt="Gaming Website Screenshot" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 20px;">
+            <a id="Link"href="https://premiumcars59.wordpress.com">Link</a>
+        </div>
+    </div>
+    
+    <div class="project">
+        <h2>Project 2: E-commerce App</h2>
+        <p>ECOM.</p>
+        <button class="view-more-btn" data-target="details2">View More</button>
+        <div id="details2" class="project-details" style="display: none;">
+            <p>I made this site for my sister so she can think she has money for the shoes.</p>
+            <img src="../images/marelliShop.png" alt="E-commerce App Screenshot" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 20px;">
+        </div>
+    </div>
+    
+    
+    
+    
+    
+       
+    <script>
+        function toggleDetails(id) {
+            const section = document.getElementById(id);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/script.js"></script>
+  <a href="../index.html" id="homeButton" title="Go to Home">
+    ↑
+</a>
+  
+    </body>
+    
+
+
+
+    

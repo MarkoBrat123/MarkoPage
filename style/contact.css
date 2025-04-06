@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #10141b;
+    padding: 40px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 40px;
+}
+
+nav ul li a {
+    color: rgb(176, 248, 248);
+    text-decoration: none;
+    font-size: 35px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-container {
+    width: 70%;
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8;
+    box-shadow: 0 0 15px rgba(65, 0, 117, 0.1);
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;  
+}
+

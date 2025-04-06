@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    font-size: 35px;
+}
+
+nav {
+    background: #10141b;
+    padding: 40px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: rgb(176, 248, 248);
+    text-decoration: none;
+    font-size: 35px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.cv-container {
+    width: 80%;
+    max-width: 1000px;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cv-header h1 {
+    font-size: 40px;
+}
+
+.cv-header p {
+    font-size: 20px;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+section p {
+    font-size: 25px;
+}
+
+#randomFact {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    margin-top: 15px;
+    padding: 20px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: #032991;
+}
+
+#homeButton {
+    position: fixed;
+    bottom: 50px; 
+    right: 50px;  
+    width: 60px;
+    height: 60px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 60px; 
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#homeButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.project {
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+
+.project-details {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+}
+
+#Link {
+    font-size: 30px;
+    color: #007BFF;  
+    text-decoration: underline;  
+    transition: color 0.3s ease; 
+}
+
+#Link:hover {
+    color: #0056b3;  
+}
+#randomFact {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.gallery-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.gallery-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}

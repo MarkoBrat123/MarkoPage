@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarelliGaming</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/About.html">About Me</a></li>
+            <li><a href="../pages/Portfolio.html">Portfolio</a></li>
+            <li><a href="../pages/Contact.HTML">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>About Me</h1>
+        <p>My name is Marko Nojic, im 19 years old, i come from small village in Serbia. I came to live in Malta 6 years ago and since then i enjoy every moment living here.</p>
+
+        <h2>My Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/skrin 1.PNG" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/skrin 2 contact.PNG" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/skrin 3.PNG" alt="Image 3">
+                </div>
+            </div>
+        </div>
+        <h2>This was early stage of the creation.</h2>
+
+        <h2>Background</h2>
+        <p>I am currently in my first year of Level 4 iGaming studies at MCAST, with plans to continue to Level 6. My goal is to build a successful career in the industry while also exploring opportunities in business and entrepreneurship.</p>
+
+        <button id="surpriseMeBtn">Surprise Me</button>
+        <p id="randomFact"></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<script>$(document).ready(function () {
+    const facts = [
+        "I used to drink 3 liters of Coca-Cola a day—now I'm Coke-free!",
+        "I want to build a 1,100hp AWD Golf 7.5R with an Audi RS engine swap.",
+        "My favorite snack is salted sunflower seeds.",
+        "I started gym training in 2025 and already dropped over 5kg!",
+        "I prefer management and marketing over coding.",
+        "I'm passionate about tuning cars and reaching insane horsepower levels.",
+        "I'm only 18 and already planning a serious business future."
+    ];
+
+    const $fact = $('#randomFact');
+    $fact.hide();
+
+    function showRandomFact() {
+        const randomIndex = Math.floor(Math.random() * facts.length);
+        return facts[randomIndex];
+    }
+
+    $('#surpriseMeBtn').click(function () {
+        const newFact = showRandomFact();
+
+        $fact.fadeOut(200, function () {
+            $fact.text(newFact).fadeIn(300);
+        });
+    });
+});
+</script>
